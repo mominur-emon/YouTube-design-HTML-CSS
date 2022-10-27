@@ -1,0 +1,67 @@
+.thum {
+  width: 100%;
+}
+
+.v-title {
+  margin-top: 0;
+  font: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+}
+.thum-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.v-author,
+.v-stats {
+  color: gray;
+  font-size: 12px;
+}
+.v-author {
+  margin-bottom: 4px;
+}
+.v-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 14px;
+}
+
+@media (max-width: 750px) {
+  .v-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .v-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .v-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.v-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 2px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+}
